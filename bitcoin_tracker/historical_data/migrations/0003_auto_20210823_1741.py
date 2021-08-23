@@ -8,6 +8,7 @@ def load_data(apps, schema_editor):
 
     PriceHistory(date=date(2013,11,29),
          price=1234.00,
+        #Agrego la coma para respetar los 3 decimals del models.
          volume=354.564,
          total_btc=12054375,
          ).save()
