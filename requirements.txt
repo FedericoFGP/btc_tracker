@@ -1,0 +1,11 @@
+django==2.1
+#django-extensions
+#ipython
+#psycopg2-binary>=2.8
+#django-debug-toolbar
+#gunicorn
+#django-heroku
+#requests
+#pygraphviz
+#pyparsing
+#pydot
