@@ -1,7 +1,7 @@
 {% extends "historical_data/base.html" %}
 {% block title %}index{% endblock %}
 {% block content %}
-	<h1>Titulo de un index</h1>
+	<h1>BTC - Precios historicos.</h1>
 	{% for price_history in prices %}
 		<ol>
 			<a href={% url 'historical_data:price-detailed' pk=price_history.pk %}> Precio BTC: {{price_history.date}}</a>
