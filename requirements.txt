@@ -1,6 +1,8 @@
 django==2.1
-#django-extensions
-#ipython
+django-extensions
+django-debug-toolbar
+ipython
+requests
 #psycopg2-binary>=2.8
 #django-debug-toolbar
 #gunicorn

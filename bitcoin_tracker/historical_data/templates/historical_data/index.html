@@ -1,0 +1,11 @@
+{% extends "historical_data/base.html" %}
+{% block title %}index{% endblock %}
+{% block content %}
+	<h1>Titulo de un index</h1>
+	{% for price_history in prices %}
+	<ul>
+		<ol>Precio: {{price_history}}</ol>
+	</ul>
+	{%endfor%}
+{% endblock %}
+
