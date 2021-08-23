@@ -20,5 +20,6 @@ from . import views
 app_name = 'historical_data'
 
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='index'),
+    path('', views.PriceIndexView.as_view(), name='index'),
+    path('<int:pk>/', views.PriceDetailedView.as_view(),name='price-detailed'),
 ]

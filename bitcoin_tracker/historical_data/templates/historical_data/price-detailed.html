@@ -1,0 +1,12 @@
+{% extends "historical_data/base.html" %}
+{% block title %}BTC Prices{% endblock %}
+{% block content %}
+	<h1>Bitcoin price history</h1>
+	<ul>
+		<ol>Fecha: {{price_history.date}}</ol>
+		<ol>Precio: {{price_history.price}}</ol>
+		<ol>Volumen: {{price_history.volume}}</ol>
+		<ol>Total BTC: {{price_history.total_btc}}</ol>
+	</ul>
+{% endblock %}
+

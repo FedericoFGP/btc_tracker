@@ -3,9 +3,9 @@
 {% block content %}
 	<h1>Titulo de un index</h1>
 	{% for price_history in prices %}
-	<ul>
-		<ol>Precio: {{price_history}}</ol>
-	</ul>
+		<ol>
+			<a href={% url 'historical_data:price-detailed' pk=price_history.pk %}> Precio BTC: {{price_history.date}}</a>
+		</ol>
 	{%endfor%}
 {% endblock %}
 
